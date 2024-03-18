@@ -121,4 +121,15 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
+CREATE DEFINER=`root`@`%` PROCEDURE `GetCountryStats`(IN isAmericaOnly TINYINT, OUT america INT, OUT europe INT, OUT asia INT)
+BEGIN
+  IF isAmericaOnly = 1 THEN
+    SELECT COUNT(id) INTO america FROM country WHERE continent = 'America';
+  ELSE
+    SELECT COUNT(id) INTO america FROM country WHERE continent = 'America';
+    SELECT COUNT(id) INTO europe FROM country WHERE continent = 'Europe';
+    SELECT COUNT(id) INTO asia FROM country WHERE continent = 'Asia';
+  END IF;
+END
+
 -- Dump completed on 2024-03-18 12:50:06
