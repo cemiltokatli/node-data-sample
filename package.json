@@ -37,6 +37,6 @@
     "webpack-node-externals": "^3.0.0"
   },
   "dependencies": {
-    "@cemiltokatli/node-data": "../node-data/lib"
+    "@cemiltokatli/node-data": "^1.0.3"
   }
 }

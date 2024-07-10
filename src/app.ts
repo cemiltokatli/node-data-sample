@@ -5,16 +5,16 @@
 // import insert from './samples/insert'
 // import selectMappedSingle from './samples/select-mapped-single'
 // import selectMappedList from './samples/select-mapped-list'
-// import selectUnmappedList from './samples/select- unmapped-list'
+// import selectUnmappedList from './samples/select-unmapped-list'
 // import selectUnmappedSingle from './samples/select-unmapped-single'
 
 async function main() {
   // const database = new Database({
   //   host: 'localhost',
-  //   port: 3307,
+  //   port: 3306,
   //   user: 'root',
   //   password: 'root',
-  //   database: 'nodedata',
+  //   database: 'nodedatasample',
   // })
 
   // await selectUnmappedList(database)
